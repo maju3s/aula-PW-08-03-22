@@ -3,6 +3,6 @@ projeto de introdução a layout em framework bootstrap 4.2
 
 1. criar conta git **OK**
 2. criar um repositório **OK**
-3. conectar o git com vs code
+3. conectar o git com vs code **ok**
 4. criar um projeto
 5. subir arquivos no git

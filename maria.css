@@ -1,0 +1,10 @@
+.bg-maria {
+    background: url(img\ jrnl.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.img {
+    border-radius: 20px;
+}

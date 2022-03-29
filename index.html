@@ -1,22 +1,78 @@
 <!DOCTYPE html>
 <html lang="ept-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>meu primeiro bootstrap</title>
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="maria.css">
 </head>
-<body>
-    <div class="container">
-        <div class=" row">
-            <div class="col-12 col-sm-8 col-md-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quasi repellat necessitatibus quos eos recusandae fugiat repudiandae debitis sunt ducimus accusamus corporis et labore officia eaque obcaecati eligendi, suscipit quod!</div>
 
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top">
+        <a class="navbar-brand text-light ">Maria</a>
+        <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="my-nav" class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link text-light " href="#">Início <span class="sr-only text-light" >cadastre-se</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="#" tabindex="-1">notícias</a>
+                </li>
+            </ul>
         </div>
+    </nav>
+    <div class="jumbotron jumbotron-fluid bg-maria">
 
     </div>
-    
+
+    <div class="container">
+        <div class="row">
+            <h1 class="textdark"># Notícias</h1>
+        </div>
+        <div class="row">
+            <div class="col-12 col-sm-5 col-md-7"></div>
+            <!--criar nova estrutura bootstrap-->
+            <div class="container fluid">
+                <div class="row mt-3">
+                    <div class="col-12 colsm-4 col-md-4">
+                        <img class="img-fluid" src="img.jpg" alt="">
+                    </div>
+                    <div class="col-12 col-sm-8 col-md-8">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti enim soluta culpa vel cumque asperiores, nobis error qui dolorum dolor perferendis quisquam esse dicta architecto perspiciatis consequatur quo quos deserunt!
+                    </div>
+                </div>
+
+                <div class="row mt-3">
+                    <div class="col-12 colsm-4 col-md-4">
+                        <img class="img-fluid" src="img.jpg" alt="">
+                    </div>
+                    <div class="col-12 col-sm-8 col-md-8">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti enim soluta culpa vel cumque asperiores, nobis error qui dolorum dolor perferendis quisquam esse dicta architecto perspiciatis consequatur quo quos deserunt!
+                    </div>
+                </div>
+
+                <div class="row mt-3">
+                    <div class="col-12 colsm-4 col-md-4">
+                        <img class="img-fluid" src="img.jpg" alt="">
+                    </div>
+                    <div class="col-12 col-sm-8 col-md-8">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti enim soluta culpa vel cumque asperiores, nobis error qui dolorum dolor perferendis quisquam esse dicta architecto perspiciatis consequatur quo quos deserunt!
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/bootstrap.js"></script>
 </body>
+
 </html>

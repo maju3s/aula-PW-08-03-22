@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>meu primeiro bootstrap</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="fontawesome-free-6.1.1-web/fontawesome-free-6.1.1-web/css/all.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="maria.css">
 </head>
@@ -24,13 +24,13 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active text-danger" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="login.html">cadastro</a>
+                        <a class="nav-link text-danger" href="login.html">cadastro</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link">contato</a>
+                        <a class="nav-link text-danger">contato</a>
                     </li>
                 </ul>
                 <form class=" d-flex">
@@ -60,7 +60,7 @@
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti enim soluta culpa vel cumque asperiores, nobis error qui dolorum dolor perferendis quisquam esse dicta architecto perspiciatis consequatur quo quos deserunt!
                     </div>
                 </div>
-
+                <div class="dropdown-divider"></div>
                 <div class="row mt-3">
                     <div class="col-12 colsm-4 col-md-4">
                         <img class="img-fluid" src="img.jpg" alt="">
@@ -69,7 +69,7 @@
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti enim soluta culpa vel cumque asperiores, nobis error qui dolorum dolor perferendis quisquam esse dicta architecto perspiciatis consequatur quo quos deserunt!
                     </div>
                 </div>
-
+                <div class="dropdown-divider"></div>
                 <div class="row mt-3">
                     <div class="col-12 colsm-4 col-md-4">
                         <img class="img-fluid" src="img.jpg" alt="">
@@ -78,26 +78,67 @@
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti enim soluta culpa vel cumque asperiores, nobis error qui dolorum dolor perferendis quisquam esse dicta architecto perspiciatis consequatur quo quos deserunt!
                     </div>
                 </div>
-
+                <div class="dropdown-divider"></div>
             </div>
         </div>
     </div>
 
-    <!--teste rodapé-->
-    <div class="container-fluid bg-danger mt-3">
+    <!--aula bootstrap (parte 1)
+    <div class="row mt-2">
+        <div class="col-12 col-sm-9 col-md-9">
+            <h2 class="text-justify text-danger">subtítulo</h2>
+            <p class="text-justify text-dark">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem facere molestias nulla voluptatem optio, natus voluptate consequatur veniam inventore alias aliquid hic laudantium fuga illum excepturi adipisci totam, sint expedita?
+            </p>
+        </div>
+        <div class="col-12 col-sm-3 col-md-3">
+            <img class="img-fluid" src="img jrnl.jpg" alt="notícia">
+        </div>
+
+    </div>-->
+
+
+
+
+    <!--parte 2-->
+    <div class="container-fluid bg-dark mt-3" style="background: -webkit-linear-gradient(to right, #000000, #434343); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #000000, #434343); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */">
         <div class="row">
             <div class="col-12">
-                <p class="text-center text-white mt-2"> todos direitos serão reservados</p>
-                <p class="text-center text-white"> siga-nos nas redes sociais</p>
+
+                <p class="text-center text-light" style="font-style: 'Poppins', sans-serif; ;margin-top: 10px;">sigam-nos</p>
                 <p class="text-center">
-                    <i class="fa-brands fa-facebook-f"></i>
-                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-facebook-square" style="width: 50px; font-size: 30px; color: #FFF;"></i>
+                    <i class="fa-brands fa-twitter" style="width: 50px; font-size: 30px; color: #FFF;"></i>
+                    <i class="fa-brands fa-instagram" style="width: 50px; font-size: 30px; color: #FFF;"></i>
                 </p>
             </div>
         </div>
+        <span></span>
+        <div class="row">
+            <div class="col-12">
+                <p class="text-center text-light mt-2" style="font-style:'Poppins', sans-serif;">
+                    todos os direitos reservados
+                </p>
+                <p class="copyright text-center text-light" style="font-family: 'Poppins', sans-serif; ">
+                    desenvolvido por: Maria J.
+                </p>
+                <p class="copyright text-center text-danger" style="font-family: 'Poppins', sans-serif; ">
+                    © 2022
+                </p>
+            </div>
+        </div>
+        <a href="login.html" style="position:fixed;width:60px;height:60px;bottom:40px;right:40px;background-color:#DC143C;color:#FFF;border-radius:50px;text-align:center;font-size:30px;box-shadow: 1px 1px 2px #888;
+z-index:1000;" target="_blank">
+            <i style="margin-top:16px; color: white;" class="fa-solid fa-message"></i>
+        </a>
+
     </div>
+    <!--fim rodapé (parte 2)-->
+
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/bootstrap.js"></script>
+    <script src="libs/fontawesome-free-6.1.1-web/js/fontawesome.js"></script>
 </body>
 
 </html>

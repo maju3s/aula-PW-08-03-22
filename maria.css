@@ -12,3 +12,19 @@
 .d-flex {
     margin-left: 690px;
 }
+
+#my-carousel {
+    width: 700px;
+    height: 400;
+    align-items: center;
+    size: 50px;
+    margin-left: 300px;
+}
+
+h5 {
+    color: rgb(225, 223, 223);
+}
+
+p {
+    color: rgb(241, 235, 235);
+}

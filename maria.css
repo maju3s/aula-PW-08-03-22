@@ -14,11 +14,9 @@
 }
 
 #my-carousel {
-    width: 700px;
     height: 400;
     align-items: center;
-    size: 50px;
-    margin-left: 300px;
+    size: 200px;
 }
 
 h5 {

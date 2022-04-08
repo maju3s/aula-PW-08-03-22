@@ -26,3 +26,12 @@ h5 {
 p {
     color: rgb(241, 235, 235);
 }
+
+i:hover {
+    color: #dc143c;
+    transition: 0.5s;
+}
+
+i {
+    cursor: pointer;
+}

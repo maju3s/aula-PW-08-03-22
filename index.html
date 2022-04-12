@@ -9,16 +9,25 @@
     <link rel="stylesheet" href="fontawesome-free-6.1.1-web/fontawesome-free-6.1.1-web/css/all.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="maria.css">
+    <link rel="stylesheet" href="js/jquery-3.6.0.min.js">
 </head>
 
 <body>
+    <!--acessibilidade no site-->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+
 
     <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img src="lua 1.svg" alt="" width="20px" d="inline-block"> Maria J
+                <img src="lua 1.svg" alt="imagem falsa logo teste" width="20px" d="inline-block"> Maria J
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
     </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -32,6 +41,9 @@
                     <li class="nav-item">
                         <a class="nav-link text-danger" href="contate-nos.html">contate-nos</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-danger" href="#my-carousel">manchetes da semana</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -39,10 +51,10 @@
     <div class="jumbotron jumbotron-fluid bg-maria">
     </div>
 
-    <div class="container">
+    <div class="container" style="border-bottom: 2px solid #DC143C; padding-bottom: 50px;">
         <div class="row">
             <marquee>
-                <h1 class="text-dark"># Notícias</h1>
+                <h1 class="text-dark">Notícias</h1>
             </marquee>
         </div>
         <div class="row">
@@ -81,9 +93,9 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-12 col-sm-9 col-md-9">
-                            <img class="img-fluid" src="img.jpg" alt="img jornal" style="height: 300px;">
+                            <img class="img-fluid" src="img.jpg" alt="img jornal" style="padding: 30px 0;">
                         </div>
-                        <div class="col-12 col-sm-3 col-md-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt reiciendis enim asperiores assumenda inventore velit atque
+                        <div class="col-12 col-sm-3 col-md-3" style="text-align:inherit; padding: 60px 0;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt reiciendis enim asperiores assumenda inventore velit atque
                         </div>
                     </div>
                 </div>
@@ -134,7 +146,7 @@
 
     <!--parte 2-->
     <div class="container-fluid bg-dark mt-3" style="background: -webkit-linear-gradient(to right, #000000, #434343); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #000000, #434343); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */">
+    background: linear-gradient(to right, #000000, #434343); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */; ">
         <div class="row">
             <div class="col-12">
 
@@ -155,12 +167,16 @@
                 <p class="copyright text-center text-danger" style="font-family: 'Poppins', sans-serif; ">
                     © 2022
                 </p>
-                <p class="copyright text-right text-light" style="font-family: 'Poppins', sans-serif;">
-                    desenvolvido por: Maria J.
+                <p class="copyright text-right text-light" style=" left: 24px; padding: 6px 24px; font-family: 'Poppins', sans-serif;">
+                    desenvolvido por: <a class="footer" href="">Maria J.</a>
                 </p>
             </div>
         </div>
-        <a href="contate-nos.html" style="position:fixed;width:60px;height:60px;bottom:40px;right:40px;background-color:#DC143C;color:#FFF;border-radius:50px;text-align:center;font-size:30px;box-shadow: 1px 1px 2px #888;
+
+        <div id="voltarTopo">
+            <a href="index.html" id="subir"><i class="fa-solid fa-circle-arrow-up"></i></a>
+        </div>
+        <a href="contate-nos.html" style="position:fixed;width:60px;height:60px;bottom:80px;right:40px;background-color:#DC143C;color:#FFF;border-radius:50px;text-align:center;font-size:30px;box-shadow: 1px 1px 2px #888;
 z-index:1000;" target="_blank">
             <i style="margin-top:16px; color: white;" class="fa-solid fa-message"></i>
         </a>
@@ -168,7 +184,12 @@ z-index:1000;" target="_blank">
     <!--fim rodapé (parte 2)-->
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/bootstrap.js"></script>
+    <script src="index.js"></script>
     <script src="libs/fontawesome-free-6.1.1-web/js/fontawesome.js"></script>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
 </body>
 
 </html>

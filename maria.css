@@ -5,6 +5,10 @@
     height: 100vh;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .img {
     border-radius: 20px;
 }
@@ -35,3 +39,48 @@ i:hover {
 i {
     cursor: pointer;
 }
+
+.footer {
+    color: #dc143c;
+}
+
+.footer:hover {
+    color: #ebebeb;
+    transition: 0.5s;
+    border-bottom: 4px solid #dc143c;
+    text-decoration: none;
+}
+
+h1 {
+    border-left: 4px solid #dc143c;
+    padding: 4px;
+}
+
+
+/*indicador: link p redirecionar*/
+
+nav ul li {
+    padding: 2px 0;
+}
+
+nav ul li:hover {
+    color: #ebebeb;
+    transition: color 0.5s;
+    border-bottom: 2px solid #dc143c;
+    font-size: 17px;
+}
+
+nav ul li+li {
+    margin-left: 24px;
+}
+
+#subir {
+    position: fixed;
+    bottom: 150px;
+    right: 45px;
+    color: #1090c3;
+    font-size: 50px;
+}
+
+
+/**/
